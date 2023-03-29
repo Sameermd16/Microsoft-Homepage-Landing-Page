@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    line-height: 1.5;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: #262626;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Nav */
+
+.main_nav {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    height: 60px;
+    padding: 20px 0;
+}
+.main_nav .logo {
+    width: 110px;
+}
+.main_nav ul {
+    display: flex;
+}
+.main_nav ul.main_menu {
+    flex: 1;
+    margin-left: 20px;
+}
+.main_nav ul li {
+    padding: 0 10px;
+}
+.main_nav ul li a {
+    padding-bottom: 2px;
+}
+.main_nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+.add_account {
+    border: 1px solid #26262696;
+    padding: 5px;
+    border-radius: 50%;
+    color: #26262696;
+}
+.search, .cart {
+    width: 20px;
+    height: 20px;
+}
+.menu_right {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    align-items: center;
+    gap: 5px;
+    display: inline-block;
+    /* display: flex; */
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+.btn:hover {
+    opacity: .9;
+}
+
+
+/* showcase */
+
+.showcase {
+    width: 100%;
+}
