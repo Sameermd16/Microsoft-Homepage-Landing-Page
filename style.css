@@ -212,7 +212,6 @@ ul {
     border-bottom: 1px solid black;
 }
 
-
 /* contact */
 
 .last_box {
@@ -242,4 +241,25 @@ ul {
 .globe {
     width: 20px;
     height: 20px;
+}
+
+/* back to top */
+
+.go_top_btn {
+    cursor: pointer;
+    background: #6161615c;
+    padding: 10px 20px;
+    display: inline-block;
+    /* margin: 10px 0 50px 0; */
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    position: fixed;
+   pointer-events: none;
+   transition: all .4s;
+}
+.go_top_btn.active {
+    bottom: 10px;
+    pointer-events: auto;
+    opacity: 1;
 }
