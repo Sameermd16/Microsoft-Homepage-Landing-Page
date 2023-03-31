@@ -200,6 +200,7 @@ ul {
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+    padding-left: 15px;
 }
 .footer_div .links {
     display: flex;
@@ -276,7 +277,16 @@ ul {
     opacity: 1;
 }
 
+/* menu button */
 
+.menu_btn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
 
 
 @media (max-width: 700px) {
@@ -295,6 +305,41 @@ ul {
     }
     .carbon .content {
         width: 85%;
+    }
+    .menu_btn {
+        display: block;
+        cursor: pointer;
+    }
+    ul.main_menu {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 100vh;
+        background: #f2f2f2;
+        width: 100%;
+        padding: 30px;
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    ul.main_menu.show {
+        opacity: 1;
+    }
+    ul.main_menu li {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc ;
+    }
+    ul.main_menu li:last-child {
+        border-bottom: none;
+    }
+    ul.main_menu li a {
+        font-size: 15px;
+    }
+    ul.main_menu li a:hover {
+        border-bottom: 0;
+    }
+    .main_nav ul.menu_right {
+        margin-right: 40px;
     }
 }
 
