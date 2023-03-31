@@ -50,14 +50,24 @@ ul {
 .main_nav ul li a {
     padding-bottom: 2px;
 }
+.add_account {
+    width: 18px;
+    height: 18px;
+    
+}
+.add_account:hover {
+    background-color: rgba(0, 0, 0, 0.175);
+    border-bottom: none;
+    /* border: 1px solid #26262696; */
+    padding: 3px;
+    border-radius: 50%;
+    /* color: #26262696; */
+}
 .main_nav ul li a:hover {
     border-bottom: 2px solid #262626;
 }
-.add_account {
-    border: 1px solid #26262696;
-    padding: 5px;
-    border-radius: 50%;
-    color: #26262696;
+.main_nav ul.menu_right {
+    margin-right: 30px;
 }
 .search, .cart {
     width: 20px;
@@ -286,6 +296,16 @@ ul {
     position: absolute;
     right: 20px;
     top: 10px;
+    cursor: pointer;
+}
+.menu_close {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
 }
 
 
@@ -308,7 +328,6 @@ ul {
     }
     .menu_btn {
         display: block;
-        cursor: pointer;
     }
     ul.main_menu {
         display: block;
@@ -337,6 +356,7 @@ ul {
     }
     ul.main_menu li a:hover {
         border-bottom: 0;
+        opacity: 0.8;
     }
     .main_nav ul.menu_right {
         margin-right: 40px;
